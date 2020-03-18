@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Buidem</string>
+    <string name="title_gestio_maquines">Gestio Màquines</string>
+    <string name="title_tipus_maquines">Tipus Màquines</string>
+    <string name="title_zones">Zones</string>
+    <string name="title_mapa_temps">Mapa i temps</string>
+
+</resources>

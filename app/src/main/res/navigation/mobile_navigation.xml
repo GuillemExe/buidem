@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_gestio_maquines">
+
+    <fragment
+        android:id="@+id/navigation_gestio_maquines"
+        android:name="com.example.buidemproject.ui.GestioMaquines.GestioMaquinesFragment"
+        android:label="@string/title_gestio_maquines"
+        tools:layout="@layout/fragment_gestio_maquines" />
+
+    <fragment
+        android:id="@+id/navigation_tipus_maquines"
+        android:name="com.example.buidemproject.ui.TipusMaquines.TipusMaquinesFragment"
+        android:label="@string/title_tipus_maquines"
+        tools:layout="@layout/fragment_tipus_maquines" />
+
+    <fragment
+        android:id="@+id/navigation_zones"
+        android:name="com.example.buidemproject.ui.Zones.ZonesFragment"
+        android:label="@string/title_zones"
+        tools:layout="@layout/fragment_zones" />
+
+    <fragment
+        android:id="@+id/navigation_mapa_temps"
+        android:name="com.example.buidemproject.ui.MapaTemps.MapaTempsFragment"
+        android:label="@string/title_mapa_temps"
+        tools:layout="@layout/fragment_mapa_temps" />
+</navigation>

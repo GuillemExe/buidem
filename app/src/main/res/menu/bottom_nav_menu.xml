@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_gestio_maquines"
+        android:icon="@drawable/gestiomaquines"
+        android:title="@string/title_gestio_maquines" />
+
+    <item
+        android:id="@+id/navigation_tipus_maquines"
+        android:icon="@drawable/tipusmaquines"
+        android:title="@string/title_tipus_maquines" />
+
+    <item
+        android:id="@+id/navigation_zones"
+        android:icon="@drawable/zona"
+        android:title="@string/title_zones" />
+
+    <item
+        android:id="@+id/navigation_mapa_temps"
+        android:icon="@drawable/mapatemps"
+        android:title="@string/title_mapa_temps" />
+
+</menu>
