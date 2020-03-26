@@ -31,19 +31,15 @@ public class BuidemHelper extends SQLiteOpenHelper {
 
     String CREATE_ZONES =
             "CREATE TABLE zones ( _id INTEGER PRIMARY KEY AUTOINCREMENT, " +
-                    "codiarticle TEXT," +
-                    "dia TEXT," +
-                    "quantitat INTEGER," +
-                    "tipus TEXT," +
-                    "FOREIGN KEY(codiarticle) REFERENCES gestorarticles(codiarticle))";
+                    "nomzona TEXT," +
+                    "latitud DOUBLE," +
+                    "longitud DOUBLE," +
+                    "FOREIGN KEY(zona) REFERENCES maquines(zona))";
 
     String CREATE_TIPUS =
             "CREATE TABLE tipus ( _id INTEGER PRIMARY KEY AUTOINCREMENT, " +
-                    "codiarticle TEXT," +
-                    "dia TEXT," +
-                    "quantitat INTEGER," +
-                    "tipus TEXT," +
-                    "FOREIGN KEY(codiarticle) REFERENCES gestorarticles(codiarticle))";
+                    "nomtipus TEXT," +
+                    "FOREIGN KEY(tipusdemaquina) REFERENCES maquines(tipusdemaquina))";
 
     @Override
     public void onCreate(SQLiteDatabase db) {

@@ -19,18 +19,19 @@ import com.example.buidemproject.R;
 public class ZonesFragment extends Fragment {
 
     private ZonesViewModel zonesViewModel;
+    TextView textoDeEjemplo;
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
         zonesViewModel = ViewModelProviders.of(this).get(ZonesViewModel.class);
         View root = inflater.inflate(R.layout.fragment_zones, container, false);
-        final TextView textView = root.findViewById(R.id.text_zones);
+        textoDeEjemplo = root.findViewById(R.id.text_zones);
 
         zonesViewModel.getText().observe(this, new Observer<String>() {
             @Override
             public void onChanged(String s) {
-                textView.setText(s);
+                textoDeEjemplo.setText(s);
             }
         });
         return root;
