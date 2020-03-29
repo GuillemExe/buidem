@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/add"
+        android:icon="@drawable/iconoagregar"
+        app:showAsAction="always"
+        android:title="Menu">
+        <menu>
+            <item android:id="@+id/item_nova_maquina"
+                android:title="Afegir nova maquina" />
+            <item android:id="@+id/item_nou_tipus"
+                android:title="Afegir nou tipus" />
+            <item android:id="@+id/item_nova_zona"
+                android:title="Afegir nova zona" />
+        </menu>
+    </item>
+
+</menu>
